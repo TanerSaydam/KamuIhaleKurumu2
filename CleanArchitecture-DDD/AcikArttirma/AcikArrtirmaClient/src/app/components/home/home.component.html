@@ -1,0 +1,82 @@
+@defer(when isLoaded()){
+<h1 class="text-center">Açık Arttırma</h1>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">Add</button>
+<div class="row mt-2">
+    @for(d of data; track d){
+    <div class="col-3 mt-1">
+        <div class="card">
+            <img src="https://katilimfinans.com.tr/images/haberler/2023/05/tkbbnin_ogretici_egitim_videolari_ucretsiz_erisime_acildi_h14144_f685c.jpeg"
+                class="card-img-top">
+
+            <div class="card-body">
+                <h5 class="card-title">{{d.title}}</h5>
+                <p class="card-text">
+                    {{d.startingFee.amount}} {{d.startingFee.currency}}
+                </p>
+                <p class="card-text">Süre: {{d.expireTime}} dk</p>
+                <p class="card-text">{{d.createdDate | date:'dd.MM.yyyy HH:mm.ss'}} dk</p>
+                <p class="card-text">{{d.description}}</p>
+                <a class="btn btn-primary">Teklif Ver</a>
+            </div>
+        </div>
+    </div>
+    }@empty {
+    <h1>Gösterilecek veri bulunamadı!</h1>
+    }
+</div>
+}@placeholder {
+<app-home-loader></app-home-loader>
+}@error {
+<h1>Bir sorunla karşılaştık, lütfen daha sonra tekrar deneyiniz!</h1>
+}@loading {
+<app-home-loader></app-home-loader>
+}
+
+
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" #addModalCloseBtn id="addModalCloseBtn" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <form #addForm="ngForm" (ngSubmit)="add(addForm)" autocomplete="off">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" [(ngModel)]="addModel.title" name="title" class="form-control" required>
+                    </div>
+                    <div class="form-group mt-1">
+                        <label for="title">Description</label>
+                        <input type="text" [(ngModel)]="addModel.description" name="description" class="form-control"
+                            required>
+                    </div>
+                    <div class="form-group mt-1">
+                        <label for="title">Amount</label>
+                        <input type="text" [(ngModel)]="addModel.startingFee.amount" name="amount" class="form-control"
+                            required>
+                    </div>
+                    <div class="form-group mt-1">
+                        <label for="title">Currency</label>
+                        <select name="currency" [(ngModel)]="addModel.startingFee.currency" class="form-control">
+                            <option>TRY</option>
+                            <option>USD</option>
+                        </select>
+                      
+                    </div>
+                    <div class="form-group mt-1">
+                        <label for="title">Expire Time</label>
+                        <input type="text" [(ngModel)]="addModel.expireTime" name="expireTime" class="form-control"
+                            required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

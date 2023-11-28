@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AcikArrtirmaServer.WebApi.props" />
+</Project>

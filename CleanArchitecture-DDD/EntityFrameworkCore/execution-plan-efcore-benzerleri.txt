@@ -1,0 +1,15 @@
+Entity Framework Core (EF Core) kendi baþýna SQL Server Management Studio'da (SSMS) bulabileceðiniz gibi bir "execution plan" özelliðine sahip deðildir. EF Core, yüksek seviyede bir ORM (Object-Relational Mapper) olduðu için, veritabaný ile ilgili düþük seviye detaylardan izole edilmiþtir. Ancak, EF Core ile çalýþýrken performansý optimize etmek ve olasý performans sorunlarýný tespit etmek için kullanabileceðiniz bazý yaklaþýmlar vardýr:
+
+Logging ve Profiling: EF Core, gerçekleþtirdiði SQL sorgularýný loglamayý destekler. Bu loglarý inceleyerek, uygulamanýzýn hangi sorgularý çalýþtýrdýðýný ve bunlarýn ne kadar zaman aldýðýný görebilirsiniz. Ayrýca, SQL Server için geliþtirilmiþ üçüncü parti SQL profillerini kullanarak (örneðin, MiniProfiler, JetBrains dotTrace, Redgate's SQL Monitor) EF Core sorgularýnýn performansýný izleyebilir ve analiz edebilirsiniz.
+
+EF Core Power Tools: Bu Visual Studio eklentisi, EF Core kullanýmýnda çeþitli yardýmcý özellikler sunar ve sorgu analizi yapmanýza olanak tanýr. Bu araçlar, bazen veritabaný þemalarýnýzý inceleyerek ve EF Core modelinizi optimize etmeniz için önerilerde bulunarak faydalý olabilir.
+
+Database Engine Tuning Advisor: SQL Server'ýn kendisi tarafýndan sunulan Database Engine Tuning Advisor aracýný kullanabilirsiniz. EF Core tarafýndan oluþturulan SQL sorgularýný bu araca saðlayarak, hangi indekslerin oluþturulmasý gerektiði konusunda öneriler alabilirsiniz.
+
+Explain Plan Kullanýmý: Bazý veritabaný yönetim sistemlerinde, bir sorgunun "explain plan"ýný alabilirsiniz. SQL Server'da bu, "Execution Plan" olarak bilinir ve SSMS'de bir sorguyu çalýþtýrdýðýnýzda görülebilir. EF Core'dan elde edilen sorguyu doðrudan SSMS'de çalýþtýrarak execution plan'ýný görebilirsiniz.
+
+Index Suggestion Tools: Bazý veritabaný performans izleme araçlarý, kullaným verilerine dayanarak indeks önerilerinde bulunabilir. SQL Server için bu tür araçlar mevcuttur ve bunlar sizin için potansiyel indeks ekleme veya kaldýrma önerileri sunabilir.
+
+ToTraceString() Metodu: EF Core 5.0'dan itibaren, bir IQueryable nesnesinin ToQueryString() metodunu kullanarak EF Core tarafýndan oluþturulan ham SQL sorgusunu alabilir ve bu sorguyu SSMS'de çalýþtýrabilirsiniz.
+
+Özetle, EF Core doðrudan execution plan veya indeks önerileri saðlamaz, ancak uygulamanýzýn gerçekleþtirdiði sorgularýn loglarýný kullanarak ve üçüncü taraf araçlarý entegre ederek performans analizi yapabilir ve gerekli indeksleri manuel olarak oluþturabilirsiniz.

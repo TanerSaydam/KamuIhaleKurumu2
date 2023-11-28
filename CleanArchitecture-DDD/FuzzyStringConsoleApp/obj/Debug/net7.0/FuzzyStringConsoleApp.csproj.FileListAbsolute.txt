@@ -1,0 +1,17 @@
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\bin\Debug\net7.0\FuzzyStringConsoleApp.exe
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\bin\Debug\net7.0\FuzzyStringConsoleApp.deps.json
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\bin\Debug\net7.0\FuzzyStringConsoleApp.runtimeconfig.json
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\bin\Debug\net7.0\FuzzyStringConsoleApp.dll
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\bin\Debug\net7.0\FuzzyStringConsoleApp.pdb
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\bin\Debug\net7.0\FuzzyString.dll
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.csproj.AssemblyReference.cache
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.AssemblyInfoInputs.cache
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.AssemblyInfo.cs
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.csproj.CoreCompileInputs.cache
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.csproj.CopyComplete
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.dll
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\refint\FuzzyStringConsoleApp.dll
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.pdb
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\FuzzyStringConsoleApp.genruntimeconfig.cache
+C:\KIK2-CleanArchitecture-DDD\FuzzyStringConsoleApp\obj\Debug\net7.0\ref\FuzzyStringConsoleApp.dll

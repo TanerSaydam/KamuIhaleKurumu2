@@ -1,0 +1,14 @@
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\bin\Debug\net7.0\DataAccess.runtimeconfig.json
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\bin\Debug\net7.0\DataAccess.dll
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\DataAccess.dll
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
+C:\KIK2-CleanArchitecture-DDD\EntityFrameworkCore\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll

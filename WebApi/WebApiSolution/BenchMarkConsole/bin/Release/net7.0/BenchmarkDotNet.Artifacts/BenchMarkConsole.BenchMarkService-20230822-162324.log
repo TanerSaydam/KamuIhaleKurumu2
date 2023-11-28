@@ -1,0 +1,530 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 5 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\b3b541f1-af02-4e09-9f3a-3bdf76df4e42
+// command took 1.15 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\b3b541f1-af02-4e09-9f3a-3bdf76df4e42
+// command took 13.36 sec and exited with 1
+// start dotnet  build -c Release --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\b3b541f1-af02-4e09-9f3a-3bdf76df4e42
+// command took 2.4 sec and exited with 0
+// ***** Done, took 00:00:16 (16.99 sec)   *****
+// Found 5 benchmarks:
+//   BenchMarkService.ToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   BenchMarkService.NoTrackingToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   BenchMarkService.ToListAsync: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   BenchMarkService.NoTrackingToListAsync: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   BenchMarkService.SqlQuery: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Yüksek performans)
+// **************************
+// Benchmark: BenchMarkService.ToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet b3b541f1-af02-4e09-9f3a-3bdf76df4e42.dll --anonymousPipes 1484 1480 --benchmarkName BenchMarkConsole.BenchMarkService.ToList --job ShortRun --benchmarkId 0 in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\b3b541f1-af02-4e09-9f3a-3bdf76df4e42\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.7
+// Runtime=.NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 159800.00 ns, 159.8000 us/op
+WorkloadJitting  1: 1 op, 1341869000.00 ns, 1.3419 s/op
+
+OverheadJitting  2: 1 op, 500.00 ns, 500.0000 ns/op
+WorkloadJitting  2: 1 op, 12854300.00 ns, 12.8543 ms/op
+
+OverheadJitting  3: 16 op, 176000.00 ns, 11.0000 us/op
+WorkloadJitting  3: 16 op, 50734600.00 ns, 3.1709 ms/op
+
+WorkloadPilot    1: 16 op, 7205300.00 ns, 450.3313 us/op
+WorkloadPilot    2: 32 op, 15491900.00 ns, 484.1219 us/op
+WorkloadPilot    3: 64 op, 45531600.00 ns, 711.4312 us/op
+WorkloadPilot    4: 128 op, 71296200.00 ns, 557.0016 us/op
+WorkloadPilot    5: 256 op, 102019000.00 ns, 398.5117 us/op
+WorkloadPilot    6: 512 op, 216094600.00 ns, 422.0598 us/op
+WorkloadPilot    7: 1024 op, 340669700.00 ns, 332.6853 us/op
+WorkloadPilot    8: 2048 op, 518172000.00 ns, 253.0137 us/op
+
+OverheadWarmup   1: 2048 op, 6500.00 ns, 3.1738 ns/op
+OverheadWarmup   2: 2048 op, 4200.00 ns, 2.0508 ns/op
+OverheadWarmup   3: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadWarmup   4: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadWarmup   5: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadWarmup   6: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadWarmup   7: 2048 op, 3900.00 ns, 1.9043 ns/op
+
+OverheadActual   1: 2048 op, 5300.00 ns, 2.5879 ns/op
+OverheadActual   2: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual   3: 2048 op, 4400.00 ns, 2.1484 ns/op
+OverheadActual   4: 2048 op, 4200.00 ns, 2.0508 ns/op
+OverheadActual   5: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual   6: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual   7: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual   8: 2048 op, 5700.00 ns, 2.7832 ns/op
+OverheadActual   9: 2048 op, 5700.00 ns, 2.7832 ns/op
+OverheadActual  10: 2048 op, 5300.00 ns, 2.5879 ns/op
+OverheadActual  11: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual  12: 2048 op, 9200.00 ns, 4.4922 ns/op
+OverheadActual  13: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual  14: 2048 op, 5100.00 ns, 2.4902 ns/op
+OverheadActual  15: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual  16: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual  17: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual  18: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual  19: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual  20: 2048 op, 3900.00 ns, 1.9043 ns/op
+
+WorkloadWarmup   1: 2048 op, 468181100.00 ns, 228.6041 us/op
+WorkloadWarmup   2: 2048 op, 511934200.00 ns, 249.9679 us/op
+WorkloadWarmup   3: 2048 op, 511888300.00 ns, 249.9455 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 485676200.00 ns, 237.1466 us/op
+WorkloadActual   2: 2048 op, 498976200.00 ns, 243.6407 us/op
+WorkloadActual   3: 2048 op, 497535200.00 ns, 242.9371 us/op
+
+// AfterActualRun
+WorkloadResult   1: 2048 op, 485672050.00 ns, 237.1446 us/op
+WorkloadResult   2: 2048 op, 498972050.00 ns, 243.6387 us/op
+WorkloadResult   3: 2048 op, 497531050.00 ns, 242.9351 us/op
+
+// AfterAll
+// Benchmark Process 16740 has exited with code 0.
+
+Mean = 241.239 μs, StdErr = 2.057 μs (0.85%), N = 3, StdDev = 3.564 μs
+Min = 237.145 μs, Q1 = 240.040 μs, Median = 242.935 μs, Q3 = 243.287 μs, Max = 243.639 μs
+IQR = 3.247 μs, LowerFence = 235.169 μs, UpperFence = 248.157 μs
+ConfidenceInterval = [176.225 μs; 306.254 μs] (CI 99.9%), Margin = 65.015 μs (26.95% of Mean)
+Skewness = -0.37, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 4 (%80,0) benchmark(s) to run. Estimated finish 2023-08-22 16:24 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Yüksek performans)
+// **************************
+// Benchmark: BenchMarkService.NoTrackingToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet b3b541f1-af02-4e09-9f3a-3bdf76df4e42.dll --anonymousPipes 1484 1480 --benchmarkName BenchMarkConsole.BenchMarkService.NoTrackingToList --job ShortRun --benchmarkId 1 in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\b3b541f1-af02-4e09-9f3a-3bdf76df4e42\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.7
+// Runtime=.NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 167800.00 ns, 167.8000 us/op
+WorkloadJitting  1: 1 op, 585416200.00 ns, 585.4162 ms/op
+
+OverheadJitting  2: 1 op, 400.00 ns, 400.0000 ns/op
+WorkloadJitting  2: 1 op, 11152500.00 ns, 11.1525 ms/op
+
+OverheadJitting  3: 16 op, 156200.00 ns, 9.7625 us/op
+WorkloadJitting  3: 16 op, 42023900.00 ns, 2.6265 ms/op
+
+WorkloadPilot    1: 16 op, 6116300.00 ns, 382.2688 us/op
+WorkloadPilot    2: 32 op, 14404400.00 ns, 450.1375 us/op
+WorkloadPilot    3: 64 op, 29073400.00 ns, 454.2719 us/op
+WorkloadPilot    4: 128 op, 48641400.00 ns, 380.0109 us/op
+WorkloadPilot    5: 256 op, 98564400.00 ns, 385.0172 us/op
+WorkloadPilot    6: 512 op, 177678200.00 ns, 347.0277 us/op
+WorkloadPilot    7: 1024 op, 275861800.00 ns, 269.3963 us/op
+WorkloadPilot    8: 2048 op, 488557800.00 ns, 238.5536 us/op
+WorkloadPilot    9: 4096 op, 892922600.00 ns, 217.9987 us/op
+
+OverheadWarmup   1: 4096 op, 9900.00 ns, 2.4170 ns/op
+OverheadWarmup   2: 4096 op, 7200.00 ns, 1.7578 ns/op
+OverheadWarmup   3: 4096 op, 7200.00 ns, 1.7578 ns/op
+OverheadWarmup   4: 4096 op, 7000.00 ns, 1.7090 ns/op
+OverheadWarmup   5: 4096 op, 7200.00 ns, 1.7578 ns/op
+OverheadWarmup   6: 4096 op, 7000.00 ns, 1.7090 ns/op
+
+OverheadActual   1: 4096 op, 10100.00 ns, 2.4658 ns/op
+OverheadActual   2: 4096 op, 7100.00 ns, 1.7334 ns/op
+OverheadActual   3: 4096 op, 7300.00 ns, 1.7822 ns/op
+OverheadActual   4: 4096 op, 7100.00 ns, 1.7334 ns/op
+OverheadActual   5: 4096 op, 7200.00 ns, 1.7578 ns/op
+OverheadActual   6: 4096 op, 7100.00 ns, 1.7334 ns/op
+OverheadActual   7: 4096 op, 7700.00 ns, 1.8799 ns/op
+OverheadActual   8: 4096 op, 7100.00 ns, 1.7334 ns/op
+OverheadActual   9: 4096 op, 7200.00 ns, 1.7578 ns/op
+OverheadActual  10: 4096 op, 8000.00 ns, 1.9531 ns/op
+OverheadActual  11: 4096 op, 8300.00 ns, 2.0264 ns/op
+OverheadActual  12: 4096 op, 7100.00 ns, 1.7334 ns/op
+OverheadActual  13: 4096 op, 7800.00 ns, 1.9043 ns/op
+OverheadActual  14: 4096 op, 12300.00 ns, 3.0029 ns/op
+OverheadActual  15: 4096 op, 9700.00 ns, 2.3682 ns/op
+OverheadActual  16: 4096 op, 8000.00 ns, 1.9531 ns/op
+OverheadActual  17: 4096 op, 7400.00 ns, 1.8066 ns/op
+OverheadActual  18: 4096 op, 8700.00 ns, 2.1240 ns/op
+OverheadActual  19: 4096 op, 7100.00 ns, 1.7334 ns/op
+OverheadActual  20: 4096 op, 7900.00 ns, 1.9287 ns/op
+
+WorkloadWarmup   1: 4096 op, 933101200.00 ns, 227.8079 us/op
+WorkloadWarmup   2: 4096 op, 937378000.00 ns, 228.8521 us/op
+WorkloadWarmup   3: 4096 op, 900246100.00 ns, 219.7866 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 4096 op, 950741100.00 ns, 232.1145 us/op
+WorkloadActual   2: 4096 op, 895941500.00 ns, 218.7357 us/op
+WorkloadActual   3: 4096 op, 922363700.00 ns, 225.1865 us/op
+
+// AfterActualRun
+WorkloadResult   1: 4096 op, 950733550.00 ns, 232.1127 us/op
+WorkloadResult   2: 4096 op, 895933950.00 ns, 218.7339 us/op
+WorkloadResult   3: 4096 op, 922356150.00 ns, 225.1846 us/op
+
+// AfterAll
+// Benchmark Process 20792 has exited with code 0.
+
+Mean = 225.344 μs, StdErr = 3.863 μs (1.71%), N = 3, StdDev = 6.691 μs
+Min = 218.734 μs, Q1 = 221.959 μs, Median = 225.185 μs, Q3 = 228.649 μs, Max = 232.113 μs
+IQR = 6.689 μs, LowerFence = 211.925 μs, UpperFence = 238.683 μs
+ConfidenceInterval = [103.278 μs; 347.409 μs] (CI 99.9%), Margin = 122.066 μs (54.17% of Mean)
+Skewness = 0.02, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 3 (%60,0) benchmark(s) to run. Estimated finish 2023-08-22 16:24 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Yüksek performans)
+// **************************
+// Benchmark: BenchMarkService.ToListAsync: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet b3b541f1-af02-4e09-9f3a-3bdf76df4e42.dll --anonymousPipes 1368 1364 --benchmarkName BenchMarkConsole.BenchMarkService.ToListAsync --job ShortRun --benchmarkId 2 in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\b3b541f1-af02-4e09-9f3a-3bdf76df4e42\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.7
+// Runtime=.NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 171300.00 ns, 171.3000 us/op
+WorkloadJitting  1: 1 op, 635964900.00 ns, 635.9649 ms/op
+
+OverheadJitting  2: 1 op, 300.00 ns, 300.0000 ns/op
+WorkloadJitting  2: 1 op, 12510600.00 ns, 12.5106 ms/op
+
+OverheadJitting  3: 16 op, 194700.00 ns, 12.1687 us/op
+WorkloadJitting  3: 16 op, 47633000.00 ns, 2.9771 ms/op
+
+WorkloadPilot    1: 16 op, 9791100.00 ns, 611.9438 us/op
+WorkloadPilot    2: 32 op, 16585100.00 ns, 518.2844 us/op
+WorkloadPilot    3: 64 op, 34432200.00 ns, 538.0031 us/op
+WorkloadPilot    4: 128 op, 68264300.00 ns, 533.3148 us/op
+WorkloadPilot    5: 256 op, 150425600.00 ns, 587.6000 us/op
+WorkloadPilot    6: 512 op, 205622000.00 ns, 401.6055 us/op
+WorkloadPilot    7: 1024 op, 374210800.00 ns, 365.4402 us/op
+WorkloadPilot    8: 2048 op, 595992300.00 ns, 291.0119 us/op
+
+OverheadWarmup   1: 2048 op, 4800.00 ns, 2.3438 ns/op
+OverheadWarmup   2: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadWarmup   3: 2048 op, 5100.00 ns, 2.4902 ns/op
+OverheadWarmup   4: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadWarmup   5: 2048 op, 5300.00 ns, 2.5879 ns/op
+OverheadWarmup   6: 2048 op, 5300.00 ns, 2.5879 ns/op
+
+OverheadActual   1: 2048 op, 6900.00 ns, 3.3691 ns/op
+OverheadActual   2: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual   3: 2048 op, 4400.00 ns, 2.1484 ns/op
+OverheadActual   4: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual   5: 2048 op, 4200.00 ns, 2.0508 ns/op
+OverheadActual   6: 2048 op, 5000.00 ns, 2.4414 ns/op
+OverheadActual   7: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual   8: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual   9: 2048 op, 5100.00 ns, 2.4902 ns/op
+OverheadActual  10: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual  11: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual  12: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadActual  13: 2048 op, 13900.00 ns, 6.7871 ns/op
+OverheadActual  14: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadActual  15: 2048 op, 4900.00 ns, 2.3926 ns/op
+OverheadActual  16: 2048 op, 4500.00 ns, 2.1973 ns/op
+OverheadActual  17: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual  18: 2048 op, 4200.00 ns, 2.0508 ns/op
+OverheadActual  19: 2048 op, 4800.00 ns, 2.3438 ns/op
+OverheadActual  20: 2048 op, 6400.00 ns, 3.1250 ns/op
+
+WorkloadWarmup   1: 2048 op, 574389400.00 ns, 280.4636 us/op
+WorkloadWarmup   2: 2048 op, 533681900.00 ns, 260.5869 us/op
+WorkloadWarmup   3: 2048 op, 523911500.00 ns, 255.8162 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 518596100.00 ns, 253.2208 us/op
+WorkloadActual   2: 2048 op, 523408500.00 ns, 255.5706 us/op
+WorkloadActual   3: 2048 op, 522440700.00 ns, 255.0980 us/op
+
+// AfterActualRun
+WorkloadResult   1: 2048 op, 518591800.00 ns, 253.2187 us/op
+WorkloadResult   2: 2048 op, 523404200.00 ns, 255.5685 us/op
+WorkloadResult   3: 2048 op, 522436400.00 ns, 255.0959 us/op
+
+// AfterAll
+// Benchmark Process 22144 has exited with code 0.
+
+Mean = 254.628 μs, StdErr = 0.718 μs (0.28%), N = 3, StdDev = 1.243 μs
+Min = 253.219 μs, Q1 = 254.157 μs, Median = 255.096 μs, Q3 = 255.332 μs, Max = 255.568 μs
+IQR = 1.175 μs, LowerFence = 252.395 μs, UpperFence = 257.095 μs
+ConfidenceInterval = [231.952 μs; 277.303 μs] (CI 99.9%), Margin = 22.675 μs (8.91% of Mean)
+Skewness = -0.32, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 2 (%40,0) benchmark(s) to run. Estimated finish 2023-08-22 16:24 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Yüksek performans)
+// **************************
+// Benchmark: BenchMarkService.NoTrackingToListAsync: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet b3b541f1-af02-4e09-9f3a-3bdf76df4e42.dll --anonymousPipes 1512 1484 --benchmarkName BenchMarkConsole.BenchMarkService.NoTrackingToListAsync --job ShortRun --benchmarkId 3 in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\b3b541f1-af02-4e09-9f3a-3bdf76df4e42\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.7
+// Runtime=.NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 150200.00 ns, 150.2000 us/op
+WorkloadJitting  1: 1 op, 617791800.00 ns, 617.7918 ms/op
+
+OverheadJitting  2: 1 op, 200.00 ns, 200.0000 ns/op
+WorkloadJitting  2: 1 op, 12001500.00 ns, 12.0015 ms/op
+
+OverheadJitting  3: 16 op, 146500.00 ns, 9.1562 us/op
+WorkloadJitting  3: 16 op, 43853400.00 ns, 2.7408 ms/op
+
+WorkloadPilot    1: 16 op, 8978700.00 ns, 561.1688 us/op
+WorkloadPilot    2: 32 op, 17953600.00 ns, 561.0500 us/op
+WorkloadPilot    3: 64 op, 33532200.00 ns, 523.9406 us/op
+WorkloadPilot    4: 128 op, 64031500.00 ns, 500.2461 us/op
+WorkloadPilot    5: 256 op, 125583900.00 ns, 490.5621 us/op
+WorkloadPilot    6: 512 op, 260493200.00 ns, 508.7758 us/op
+WorkloadPilot    7: 1024 op, 391716300.00 ns, 382.5354 us/op
+WorkloadPilot    8: 2048 op, 662820600.00 ns, 323.6429 us/op
+
+OverheadWarmup   1: 2048 op, 4700.00 ns, 2.2949 ns/op
+OverheadWarmup   2: 2048 op, 3700.00 ns, 1.8066 ns/op
+OverheadWarmup   3: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadWarmup   4: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadWarmup   5: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadWarmup   6: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadWarmup   7: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadWarmup   8: 2048 op, 3800.00 ns, 1.8555 ns/op
+
+OverheadActual   1: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual   2: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual   3: 2048 op, 4800.00 ns, 2.3438 ns/op
+OverheadActual   4: 2048 op, 5000.00 ns, 2.4414 ns/op
+OverheadActual   5: 2048 op, 9900.00 ns, 4.8340 ns/op
+OverheadActual   6: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual   7: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual   8: 2048 op, 6200.00 ns, 3.0273 ns/op
+OverheadActual   9: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual  10: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  11: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  12: 2048 op, 4400.00 ns, 2.1484 ns/op
+OverheadActual  13: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  14: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  15: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual  16: 2048 op, 9500.00 ns, 4.6387 ns/op
+OverheadActual  17: 2048 op, 4200.00 ns, 2.0508 ns/op
+OverheadActual  18: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadActual  19: 2048 op, 5300.00 ns, 2.5879 ns/op
+OverheadActual  20: 2048 op, 4800.00 ns, 2.3438 ns/op
+
+WorkloadWarmup   1: 2048 op, 576375400.00 ns, 281.4333 us/op
+WorkloadWarmup   2: 2048 op, 543369200.00 ns, 265.3170 us/op
+WorkloadWarmup   3: 2048 op, 552462500.00 ns, 269.7571 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 546369100.00 ns, 266.7818 us/op
+WorkloadActual   2: 2048 op, 559017300.00 ns, 272.9577 us/op
+WorkloadActual   3: 2048 op, 537588400.00 ns, 262.4943 us/op
+
+// AfterActualRun
+WorkloadResult   1: 2048 op, 546364850.00 ns, 266.7797 us/op
+WorkloadResult   2: 2048 op, 559013050.00 ns, 272.9556 us/op
+WorkloadResult   3: 2048 op, 537584150.00 ns, 262.4923 us/op
+
+// AfterAll
+// Benchmark Process 26992 has exited with code 0.
+
+Mean = 267.409 μs, StdErr = 3.037 μs (1.14%), N = 3, StdDev = 5.260 μs
+Min = 262.492 μs, Q1 = 264.636 μs, Median = 266.780 μs, Q3 = 269.868 μs, Max = 272.956 μs
+IQR = 5.232 μs, LowerFence = 256.788 μs, UpperFence = 277.715 μs
+ConfidenceInterval = [171.447 μs; 363.371 μs] (CI 99.9%), Margin = 95.962 μs (35.89% of Mean)
+Skewness = 0.12, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 1 (%20,0) benchmark(s) to run. Estimated finish 2023-08-22 16:24 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Yüksek performans)
+// **************************
+// Benchmark: BenchMarkService.SqlQuery: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet b3b541f1-af02-4e09-9f3a-3bdf76df4e42.dll --anonymousPipes 1548 1536 --benchmarkName BenchMarkConsole.BenchMarkService.SqlQuery --job ShortRun --benchmarkId 4 in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\b3b541f1-af02-4e09-9f3a-3bdf76df4e42\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.7
+// Runtime=.NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 195300.00 ns, 195.3000 us/op
+WorkloadJitting  1: 1 op, 191671600.00 ns, 191.6716 ms/op
+
+WorkloadPilot    1: 2 op, 2145000.00 ns, 1.0725 ms/op
+WorkloadPilot    2: 3 op, 305900.00 ns, 101.9667 us/op
+WorkloadPilot    3: 4 op, 394400.00 ns, 98.6000 us/op
+WorkloadPilot    4: 5 op, 739700.00 ns, 147.9400 us/op
+WorkloadPilot    5: 6 op, 635400.00 ns, 105.9000 us/op
+WorkloadPilot    6: 7 op, 826400.00 ns, 118.0571 us/op
+WorkloadPilot    7: 8 op, 1145500.00 ns, 143.1875 us/op
+WorkloadPilot    8: 9 op, 1072800.00 ns, 119.2000 us/op
+WorkloadPilot    9: 10 op, 798100.00 ns, 79.8100 us/op
+WorkloadPilot   10: 11 op, 1017000.00 ns, 92.4545 us/op
+WorkloadPilot   11: 12 op, 2120700.00 ns, 176.7250 us/op
+WorkloadPilot   12: 13 op, 1208100.00 ns, 92.9308 us/op
+WorkloadPilot   13: 14 op, 1672300.00 ns, 119.4500 us/op
+WorkloadPilot   14: 15 op, 1173300.00 ns, 78.2200 us/op
+WorkloadPilot   15: 16 op, 1308600.00 ns, 81.7875 us/op
+WorkloadPilot   16: 32 op, 3015800.00 ns, 94.2438 us/op
+WorkloadPilot   17: 64 op, 8261600.00 ns, 129.0875 us/op
+WorkloadPilot   18: 128 op, 15185200.00 ns, 118.6344 us/op
+WorkloadPilot   19: 256 op, 25306300.00 ns, 98.8527 us/op
+WorkloadPilot   20: 512 op, 47595900.00 ns, 92.9607 us/op
+WorkloadPilot   21: 1024 op, 88606700.00 ns, 86.5300 us/op
+WorkloadPilot   22: 2048 op, 173094900.00 ns, 84.5190 us/op
+WorkloadPilot   23: 4096 op, 328004900.00 ns, 80.0793 us/op
+WorkloadPilot   24: 8192 op, 676672600.00 ns, 82.6016 us/op
+
+WorkloadWarmup   1: 8192 op, 634712900.00 ns, 77.4796 us/op
+WorkloadWarmup   2: 8192 op, 636867100.00 ns, 77.7426 us/op
+WorkloadWarmup   3: 8192 op, 602664400.00 ns, 73.5674 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 8192 op, 601969300.00 ns, 73.4826 us/op
+WorkloadActual   2: 8192 op, 643431600.00 ns, 78.5439 us/op
+WorkloadActual   3: 8192 op, 612295600.00 ns, 74.7431 us/op
+
+// AfterActualRun
+WorkloadResult   1: 8192 op, 601969300.00 ns, 73.4826 us/op
+WorkloadResult   2: 8192 op, 643431600.00 ns, 78.5439 us/op
+WorkloadResult   3: 8192 op, 612295600.00 ns, 74.7431 us/op
+
+// AfterAll
+// Benchmark Process 19320 has exited with code 0.
+
+Mean = 75.590 μs, StdErr = 1.521 μs (2.01%), N = 3, StdDev = 2.635 μs
+Min = 73.483 μs, Q1 = 74.113 μs, Median = 74.743 μs, Q3 = 76.644 μs, Max = 78.544 μs
+IQR = 2.531 μs, LowerFence = 70.317 μs, UpperFence = 80.439 μs
+ConfidenceInterval = [27.522 μs; 123.658 μs] (CI 99.9%), Margin = 48.068 μs (63.59% of Mean)
+Skewness = 0.29, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 0 (%0,0) benchmark(s) to run. Estimated finish 2023-08-22 16:24 (0h 0m from now) **
+Successfully reverted power plan (GUID: 653fbb7f-248b-41d0-aa49-03fabbfd5e8e FriendlyName: Gaming)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\BenchMarkConsole.BenchMarkService-report.csv
+  BenchmarkDotNet.Artifacts\results\BenchMarkConsole.BenchMarkService-report-github.md
+  BenchmarkDotNet.Artifacts\results\BenchMarkConsole.BenchMarkService-report.html
+
+// * Detailed results *
+BenchMarkService.ToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 241.239 μs, StdErr = 2.057 μs (0.85%), N = 3, StdDev = 3.564 μs
+Min = 237.145 μs, Q1 = 240.040 μs, Median = 242.935 μs, Q3 = 243.287 μs, Max = 243.639 μs
+IQR = 3.247 μs, LowerFence = 235.169 μs, UpperFence = 248.157 μs
+ConfidenceInterval = [176.225 μs; 306.254 μs] (CI 99.9%), Margin = 65.015 μs (26.95% of Mean)
+Skewness = -0.37, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[233.901 μs ; 240.044 μs) | @
+[240.044 μs ; 246.882 μs) | @@
+---------------------------------------------------
+
+BenchMarkService.NoTrackingToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 225.344 μs, StdErr = 3.863 μs (1.71%), N = 3, StdDev = 6.691 μs
+Min = 218.734 μs, Q1 = 221.959 μs, Median = 225.185 μs, Q3 = 228.649 μs, Max = 232.113 μs
+IQR = 6.689 μs, LowerFence = 211.925 μs, UpperFence = 238.683 μs
+ConfidenceInterval = [103.278 μs; 347.409 μs] (CI 99.9%), Margin = 122.066 μs (54.17% of Mean)
+Skewness = 0.02, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[215.870 μs ; 228.048 μs) | @@
+[228.048 μs ; 238.202 μs) | @
+---------------------------------------------------
+
+BenchMarkService.ToListAsync: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 254.628 μs, StdErr = 0.718 μs (0.28%), N = 3, StdDev = 1.243 μs
+Min = 253.219 μs, Q1 = 254.157 μs, Median = 255.096 μs, Q3 = 255.332 μs, Max = 255.568 μs
+IQR = 1.175 μs, LowerFence = 252.395 μs, UpperFence = 257.095 μs
+ConfidenceInterval = [231.952 μs; 277.303 μs] (CI 99.9%), Margin = 22.675 μs (8.91% of Mean)
+Skewness = -0.32, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[252.088 μs ; 256.700 μs) | @@@
+---------------------------------------------------
+
+BenchMarkService.NoTrackingToListAsync: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 267.409 μs, StdErr = 3.037 μs (1.14%), N = 3, StdDev = 5.260 μs
+Min = 262.492 μs, Q1 = 264.636 μs, Median = 266.780 μs, Q3 = 269.868 μs, Max = 272.956 μs
+IQR = 5.232 μs, LowerFence = 256.788 μs, UpperFence = 277.715 μs
+ConfidenceInterval = [171.447 μs; 363.371 μs] (CI 99.9%), Margin = 95.962 μs (35.89% of Mean)
+Skewness = 0.12, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[259.849 μs ; 269.423 μs) | @@
+[269.423 μs ; 277.742 μs) | @
+---------------------------------------------------
+
+BenchMarkService.SqlQuery: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 75.590 μs, StdErr = 1.521 μs (2.01%), N = 3, StdDev = 2.635 μs
+Min = 73.483 μs, Q1 = 74.113 μs, Median = 74.743 μs, Q3 = 76.644 μs, Max = 78.544 μs
+IQR = 2.531 μs, LowerFence = 70.317 μs, UpperFence = 80.439 μs
+ConfidenceInterval = [27.522 μs; 123.658 μs] (CI 99.9%), Margin = 48.068 μs (63.59% of Mean)
+Skewness = 0.29, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[71.715 μs ; 76.511 μs) | @@
+[76.511 μs ; 80.942 μs) | @
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.13.7, Windows 11 (10.0.22621.2134/22H2/2022Update/SunValley2)
+11th Gen Intel Core i7-11800H 2.30GHz, 1 CPU, 16 logical and 8 physical cores
+.NET SDK 7.0.400
+  [Host]   : .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+  ShortRun : .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+
+Job=ShortRun  IterationCount=3  LaunchCount=1  
+WarmupCount=3  
+
+|                Method |      Mean |     Error |   StdDev |        Ratio | RatioSD |
+|---------------------- |----------:|----------:|---------:|-------------:|--------:|
+|                ToList | 241.24 μs |  65.01 μs | 3.564 μs |     baseline |         |
+|      NoTrackingToList | 225.34 μs | 122.07 μs | 6.691 μs | 1.07x faster |   0.05x |
+|           ToListAsync | 254.63 μs |  22.68 μs | 1.243 μs | 1.06x slower |   0.01x |
+| NoTrackingToListAsync | 267.41 μs |  95.96 μs | 5.260 μs | 1.11x slower |   0.02x |
+|              SqlQuery |  75.59 μs |  48.07 μs | 2.635 μs | 3.19x faster |   0.08x |
+
+// * Legends *
+  Mean    : Arithmetic mean of all measurements
+  Error   : Half of 99.9% confidence interval
+  StdDev  : Standard deviation of all measurements
+  Ratio   : Mean of the ratio distribution ([Current]/[Baseline])
+  RatioSD : Standard deviation of the ratio distribution ([Current]/[Baseline])
+  1 μs    : 1 Microsecond (0.000001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:32 (32.49 sec), executed benchmarks: 5
+
+Global total time: 00:00:49 (49.71 sec), executed benchmarks: 5
+// * Artifacts cleanup *
+Artifacts cleanup is finished

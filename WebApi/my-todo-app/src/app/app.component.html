@@ -1,0 +1,4 @@
+<a *ngIf="_auth.isAuthorized('Menu.Home')" routerLink="/">Ana Sayfa</a> ||
+<a *ngIf="_auth.isAuthorized('Menu.About')" routerLink="/about">Hakkımda</a>
+
+<router-outlet></router-outlet>

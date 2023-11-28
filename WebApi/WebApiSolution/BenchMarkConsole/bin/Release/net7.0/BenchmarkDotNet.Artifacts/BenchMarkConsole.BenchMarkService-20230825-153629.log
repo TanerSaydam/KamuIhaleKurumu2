@@ -1,0 +1,186 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3
+// command took 1.59 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3
+// command took 14.45 sec and exited with 1
+// start dotnet  build -c Release --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3
+// command took 3.32 sec and exited with 0
+// ***** Done, took 00:00:19 (19.51 sec)   *****
+// Found 2 benchmarks:
+//   BenchMarkService.NoTrackingToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   BenchMarkService.ElasticSearchAllList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Yüksek performans)
+// **************************
+// Benchmark: BenchMarkService.NoTrackingToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 20254a41-2d03-4923-8781-052f126ae3b3.dll --anonymousPipes 1660 1656 --benchmarkName BenchMarkConsole.BenchMarkService.NoTrackingToList --job ShortRun --benchmarkId 0 in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.7
+// Runtime=.NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 200000.00 ns, 200.0000 us/op
+WorkloadJitting  1: 1 op, 9402499500.00 ns, 9.4025 s/op
+
+OverheadJitting  2: 1 op, 900.00 ns, 900.0000 ns/op
+WorkloadJitting  2: 1 op, 166022200.00 ns, 166.0222 ms/op
+
+WorkloadPilot    1: 2 op, 20515414900.00 ns, 10.2577 s/op
+
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): Bekleme işlem zamanı aşıldı.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BenchMarkConsole.BenchMarkService.NoTrackingToList() in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\BenchMarkService.cs:line 33
+   at BenchmarkDotNet.Autogenerated.Runnable_0.WorkloadActionNoUnroll(Int64 invokeCount) in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\20254a41-2d03-4923-8781-052f126ae3b3.notcs:line 314
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineStage.RunIteration(IterationMode mode, IterationStage stage, Int32 index, Int64 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineStage.Run(IStoppingCriteria criteria, Int64 invokeCount, IterationMode mode, IterationStage stage, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.Run(Int64 invokeCount, IterationMode iterationMode, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.EngineWarmupStage.RunWorkload(Int64 invokeCount, Int32 unrollFactor, RunStrategy runStrategy)
+   at BenchmarkDotNet.Engines.Engine.Run()
+   at BenchmarkDotNet.Autogenerated.Runnable_0.Run(IHost host, String benchmarkName) in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\20254a41-2d03-4923-8781-052f126ae3b3.notcs:line 181
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+ClientConnectionId:99b143de-038f-46b4-a1c7-7abfade9bbdd
+Error Number:-2,State:0,Class:11
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\20254a41-2d03-4923-8781-052f126ae3b3.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 24640 has exited with code -1.
+
+// ** Remained 1 (%50,0) benchmark(s) to run. Estimated finish 2023-08-25 15:39 (0h 1m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Yüksek performans)
+// **************************
+// Benchmark: BenchMarkService.ElasticSearchAllList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 20254a41-2d03-4923-8781-052f126ae3b3.dll --anonymousPipes 1284 1540 --benchmarkName BenchMarkConsole.BenchMarkService.ElasticSearchAllList --job ShortRun --benchmarkId 1 in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\bin\Release\net7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.7
+// Runtime=.NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 176000.00 ns, 176.0000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at BenchMarkConsole.BenchMarkService.ElasticSearchAllList() in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\BenchMarkService.cs:line 42
+   at BenchmarkDotNet.Autogenerated.Runnable_1.<.ctor>b__3_4() in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\20254a41-2d03-4923-8781-052f126ae3b3.notcs:line 395
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionNoUnroll(Int64 invokeCount) in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\20254a41-2d03-4923-8781-052f126ae3b3.notcs:line 509
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\20254a41-2d03-4923-8781-052f126ae3b3.notcs:line 374
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\KIK-WebApiEgitimi-2\WebApiSolution\BenchMarkConsole\bin\Release\net7.0\20254a41-2d03-4923-8781-052f126ae3b3\20254a41-2d03-4923-8781-052f126ae3b3.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 13652 has exited with code -1.
+
+// ** Remained 0 (%0,0) benchmark(s) to run. Estimated finish 2023-08-25 15:37 (0h 0m from now) **
+Successfully reverted power plan (GUID: 653fbb7f-248b-41d0-aa49-03fabbfd5e8e FriendlyName: Gaming)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\BenchMarkConsole.BenchMarkService-report.csv
+  BenchmarkDotNet.Artifacts\results\BenchMarkConsole.BenchMarkService-report-github.md
+  BenchmarkDotNet.Artifacts\results\BenchMarkConsole.BenchMarkService-report.html
+
+// * Detailed results *
+BenchMarkService.NoTrackingToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+BenchMarkService.ElasticSearchAllList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet v0.13.7, Windows 11 (10.0.22621.2134/22H2/2022Update/SunValley2)
+11th Gen Intel Core i7-11800H 2.30GHz, 1 CPU, 16 logical and 8 physical cores
+.NET SDK 7.0.400
+  [Host]   : .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+  ShortRun : .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+
+Job=ShortRun  IterationCount=3  LaunchCount=1  
+WarmupCount=3  
+
+|               Method | Mean | Error | Ratio | RatioSD |
+|--------------------- |-----:|------:|------:|--------:|
+|     NoTrackingToList |   NA |    NA |     ? |       ? |
+| ElasticSearchAllList |   NA |    NA |     ? |       ? |
+
+Benchmarks with issues:
+  BenchMarkService.NoTrackingToList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+  BenchMarkService.ElasticSearchAllList: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+// * Warnings *
+BaselineCustomAnalyzer
+  Summary -> A question mark '?' symbol indicates that it was not possible to compute the (Ratio, RatioSD) column(s) because the baseline value is too close to zero.
+Environment
+  Summary -> Detected error exit code from one of the benchmarks. It might be caused by following antivirus software:
+        - Windows Defender (windowsdefender://)
+Use InProcessEmitToolchain or InProcessNoEmitToolchain to avoid new process creation.
+
+
+// * Legends *
+  Mean    : Arithmetic mean of all measurements
+  Error   : Half of 99.9% confidence interval
+  Ratio   : Mean of the ratio distribution ([Current]/[Baseline])
+  RatioSD : Standard deviation of the ratio distribution ([Current]/[Baseline])
+  1 ns    : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:01:06 (66.7 sec), executed benchmarks: 2
+
+Global total time: 00:01:26 (86.47 sec), executed benchmarks: 2
+// * Artifacts cleanup *
+Artifacts cleanup is finished

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7VmckVCm8deGTYZotEDqVuuryor2orjXolHoCa6bYc4MC0ROiRXZg6t+p7L/hphuppdQlWekHAsKER7+GywoGQ==",
+  "success": true,
+  "projectFilePath": "C:\\KIK2-CleanArchitecture-DDD\\CleanArchitecture\\CleanArchitecture.Entities\\CleanArchitecture.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tugay\\.nuget\\packages\\ulid\\1.3.3\\ulid.1.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}

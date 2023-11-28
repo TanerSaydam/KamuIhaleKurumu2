@@ -1,0 +1,18 @@
+@if (isTrue) {
+<h1>Deneme</h1>
+}@else {
+<h1>Deneme2</h1>
+}
+
+<button (click)="isTrue = !isTrue">Change</button>
+<input type="text" [(ngModel)]="search">
+<ul>
+  @for (t of todos | todo:search; track t) {
+  <li>
+    {{$index}} {{t?.title}} 
+  </li>
+}
+@empty {
+  <li>kayıt yok</li>
+}
+</ul>

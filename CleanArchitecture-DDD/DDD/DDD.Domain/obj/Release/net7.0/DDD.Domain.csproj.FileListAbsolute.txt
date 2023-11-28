@@ -1,0 +1,11 @@
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\bin\Release\net7.0\DDD.Domain.deps.json
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\bin\Release\net7.0\DDD.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\bin\Release\net7.0\DDD.Domain.pdb
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\obj\Release\net7.0\DDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\obj\Release\net7.0\DDD.Domain.AssemblyInfoInputs.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\obj\Release\net7.0\DDD.Domain.AssemblyInfo.cs
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\obj\Release\net7.0\DDD.Domain.csproj.CoreCompileInputs.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\obj\Release\net7.0\DDD.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\obj\Release\net7.0\refint\DDD.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\obj\Release\net7.0\DDD.Domain.pdb
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Domain\obj\Release\net7.0\ref\DDD.Domain.dll

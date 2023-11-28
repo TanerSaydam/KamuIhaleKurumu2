@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Page</title>
+</head>
+<body>
+    <a href="index.html">Ana Sayfa</a> || 
+    <a href="about.html">Hakkımda</a> ||
+    <a href="contact.html">İletişim</a>
+
+
+
+    <h1>About Page</h1>
+    <button onclick="getApiRequest()">Get Todo List</button>
+    <ul id="root">
+        
+    </ul>
+
+    <script>
+        function getApiRequest(){
+            fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(response => response.json())
+            .then(data => {
+                let elements = "";
+                data.forEach(element => {
+                    elements += "<li>" + element.title + "</li>"
+                });
+
+                const el = document.getElementById("root");
+                el.innerHTML = elements;
+            });
+        }
+    </script>
+</body>
+</html>

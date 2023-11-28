@@ -1,0 +1,165 @@
+<app-blank [navs]="['Home']" pageTitle="Home Page">
+  <app-section sectionTitle="Personel List">
+    <div class="form-group">
+      <button
+        class="btn btn-outline-primary"
+        data-target="#addModal"
+        data-toggle="modal"
+      >
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+    <div class="form-group">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Profession</th>
+            <th>Salary</th>
+            <th>Starting Date</th>
+            <th>Leaving Date</th>
+            <th>Leaving Status</th>
+            <th>Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of personels; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>
+              <img
+                [src]="'https://kik.ecnorow.com/images/' + p.imageUrl"
+                width="50"
+              />
+            </td>
+            <td>{{ p.name }} {{ p.lastName }}</td>
+            <td>{{ p.profession }}</td>
+            <td>{{ p.salary }}</td>
+            <td>{{ p.startingDate }}</td>
+            <td>{{ p.leavingDate }}</td>
+            <td>{{ p.leavingStatus }}</td>
+            <td>
+              <button
+                class="btn btn-outline-warning btn-sm"
+                style="margin-right: 5px"
+              >
+                <i class="fa-solid fa-pen-to-square fa-shake"></i>
+              </button>
+              <button class="btn btn-outline-danger btn-sm" (click)="removeById(p)">
+                <i class="fa fa-trash fa-bounce"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </app-section>
+</app-blank>
+
+<div
+  class="modal fade"
+  id="addModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <form #addForm="ngForm" (ngSubmit)="save(addForm)" autocomplete="off">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Add Personel Form
+          </h1>
+          <button
+            id="addModal_close"
+            type="button"
+            class="btn btn-outline-danger"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+          <i class="fa fa-x"></i>
+        </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  [(ngModel)]="addModel.name"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mt-1">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  [(ngModel)]="addModel.lastName"
+                  name="lastName"
+                  id="lastName"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mt-1">
+                <label for="profession">Profession</label>
+                <select name="profession" id="profession" [(ngModel)]="addModel.profession" class="form-control" name="profession">
+                  <option>Seçim Yapınız...</option>
+                  <option>Muhasebe</option>
+                  <option>Yazılım</option>
+                  <option>İnsan Kaynakları</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group mt-1">
+                <label for="image">Last Name</label>
+                <input
+                  type="file"
+                  (change)="getImage($event)"
+                  ngModel
+                  name="image"
+                  id="image"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mt-1">
+                <label for="salary">Salary</label>
+                <input
+                  type="number"
+                  [(ngModel)]="addModel.salary"
+                  name="salary"
+                  id="salary"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mt-1">
+                <label for="startingDate">Staring Date</label>
+                <input
+                  type="date"
+                  [(ngModel)]="dateInput"
+                  name="startingDate"
+                  id="startingDate"
+                  class="form-control"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

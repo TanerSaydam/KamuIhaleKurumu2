@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "HexagonalArchitecture.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/HexagonalArchitecture.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HexagonalArchitecture.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HexagonalArchitecture.Domain/1.0.0": {
+      "type": "project",
+      "path": "../HexagonalArchitecture.Domain/HexagonalArchitecture.Domain.csproj",
+      "msbuildProject": "../HexagonalArchitecture.Domain/HexagonalArchitecture.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "HexagonalArchitecture.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\tugay\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\KIK2-CleanArchitecture-DDD\\ArchitecturalPatterns\\HexagonalArchitecture\\HexagonalArchitecture.Application\\HexagonalArchitecture.Application.csproj",
+      "projectName": "HexagonalArchitecture.Application",
+      "projectPath": "C:\\KIK2-CleanArchitecture-DDD\\ArchitecturalPatterns\\HexagonalArchitecture\\HexagonalArchitecture.Application\\HexagonalArchitecture.Application.csproj",
+      "packagesPath": "C:\\Users\\tugay\\.nuget\\packages\\",
+      "outputPath": "C:\\KIK2-CleanArchitecture-DDD\\ArchitecturalPatterns\\HexagonalArchitecture\\HexagonalArchitecture.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\tugay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\KIK2-CleanArchitecture-DDD\\ArchitecturalPatterns\\HexagonalArchitecture\\HexagonalArchitecture.Domain\\HexagonalArchitecture.Domain.csproj": {
+              "projectPath": "C:\\KIK2-CleanArchitecture-DDD\\ArchitecturalPatterns\\HexagonalArchitecture\\HexagonalArchitecture.Domain\\HexagonalArchitecture.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

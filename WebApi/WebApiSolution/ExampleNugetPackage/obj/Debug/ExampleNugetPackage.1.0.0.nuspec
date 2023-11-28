@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ExampleNugetPackage</id>
+    <version>1.0.0</version>
+    <authors>ExampleNugetPackage</authors>
+    <readme>README.md</readme>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\bin\Debug\net7.0\ExampleNugetPackage.dll" target="lib\net7.0\ExampleNugetPackage.dll" />
+    <file src="C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\README.md" target="\README.md" />
+  </files>
+</package>

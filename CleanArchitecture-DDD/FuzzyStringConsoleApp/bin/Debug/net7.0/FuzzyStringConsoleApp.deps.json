@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "FuzzyStringConsoleApp/1.0.0": {
+        "dependencies": {
+          "FuzzyString": "1.0.0"
+        },
+        "runtime": {
+          "FuzzyStringConsoleApp.dll": {}
+        }
+      },
+      "FuzzyString/1.0.0": {
+        "runtime": {
+          "lib/FuzzyString.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FuzzyStringConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FuzzyString/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TdCDH1s8A2jCrZJiZKZ+vHp0JIfrH1/9b4DUYF5/UQH681fQFK2oUakRSGnm1xD07fFzIJ+TDMtsPszd3YHKbQ==",
+      "path": "fuzzystring/1.0.0",
+      "hashPath": "fuzzystring.1.0.0.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\bin\Debug\net7.0\DDD.TestConsoleApp.exe
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\bin\Debug\net7.0\DDD.TestConsoleApp.deps.json
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\bin\Debug\net7.0\DDD.TestConsoleApp.runtimeconfig.json
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\bin\Debug\net7.0\DDD.TestConsoleApp.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\bin\Debug\net7.0\DDD.TestConsoleApp.pdb
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\DDD.TestConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\DDD.TestConsoleApp.AssemblyInfoInputs.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\DDD.TestConsoleApp.AssemblyInfo.cs
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\DDD.TestConsoleApp.csproj.CoreCompileInputs.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\DDD.TestConsoleApp.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\refint\DDD.TestConsoleApp.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\DDD.TestConsoleApp.pdb
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\DDD.TestConsoleApp.genruntimeconfig.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.TestConsoleApp\obj\Debug\net7.0\ref\DDD.TestConsoleApp.dll

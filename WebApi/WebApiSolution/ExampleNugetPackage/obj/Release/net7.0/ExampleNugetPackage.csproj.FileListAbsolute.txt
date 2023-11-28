@@ -1,0 +1,11 @@
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\bin\Release\net7.0\ExampleNugetPackage.deps.json
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\bin\Release\net7.0\ExampleNugetPackage.dll
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\bin\Release\net7.0\ExampleNugetPackage.pdb
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\obj\Release\net7.0\ExampleNugetPackage.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\obj\Release\net7.0\ExampleNugetPackage.AssemblyInfoInputs.cache
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\obj\Release\net7.0\ExampleNugetPackage.AssemblyInfo.cs
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\obj\Release\net7.0\ExampleNugetPackage.csproj.CoreCompileInputs.cache
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\obj\Release\net7.0\ExampleNugetPackage.dll
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\obj\Release\net7.0\refint\ExampleNugetPackage.dll
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\obj\Release\net7.0\ExampleNugetPackage.pdb
+C:\KIK-WebApiEgitimi-2\WebApiSolution\ExampleNugetPackage\obj\Release\net7.0\ref\ExampleNugetPackage.dll

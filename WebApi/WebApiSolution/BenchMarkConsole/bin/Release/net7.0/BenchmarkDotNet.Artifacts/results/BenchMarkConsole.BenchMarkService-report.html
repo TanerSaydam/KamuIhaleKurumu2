@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>BenchMarkConsole.BenchMarkService-20230825-154711</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.13.7, Windows 11 (10.0.22621.2134/22H2/2022Update/SunValley2)
+11th Gen Intel Core i7-11800H 2.30GHz, 1 CPU, 16 logical and 8 physical cores
+.NET SDK 7.0.400
+  [Host]   : .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+  ShortRun : .NET 7.0.10 (7.0.1023.36312), X64 RyuJIT AVX2
+</code></pre>
+<pre><code>Job=ShortRun  IterationCount=3  LaunchCount=1  
+WarmupCount=3  
+</code></pre>
+
+<table>
+<thead><tr><th>        Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>  Ratio</th><th>RatioSD</th>
+</tr>
+</thead><tbody><tr><td>NoTrackingToList</td><td>14.52 ms</td><td>11.22 ms</td><td>0.615 ms</td><td>baseline</td><td></td>
+</tr><tr><td>ElasticSearchAllList</td><td>538.79 ms</td><td>1,757.17 ms</td><td>96.317 ms</td><td>37.30x slower</td><td>8.03x</td>
+</tr></tbody></table>
+</body>
+</html>

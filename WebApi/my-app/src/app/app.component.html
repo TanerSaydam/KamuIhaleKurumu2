@@ -1,0 +1,9 @@
+<h1>My Angular Application</h1>
+<button (click)='getAll()'>Api İsteğ yağ</button>
+<ul>
+  <li *ngFor="let t of todos" [style]="'background-color: ' + (hasCompleted(t.completed))">
+    {{t.title}}
+    <button *ngIf="isTwoMode(t.id, t.userId)">Aktif</button>
+    <button *ngIf="!isTwoMode(t.id, t.userId)">Pasif</button>
+  </li>
+</ul>

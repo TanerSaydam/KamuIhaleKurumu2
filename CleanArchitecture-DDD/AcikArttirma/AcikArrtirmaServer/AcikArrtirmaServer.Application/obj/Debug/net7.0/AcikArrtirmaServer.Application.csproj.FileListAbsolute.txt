@@ -1,0 +1,15 @@
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\bin\Debug\net7.0\AcikArrtirmaServer.Application.deps.json
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\bin\Debug\net7.0\AcikArrtirmaServer.Application.dll
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\bin\Debug\net7.0\AcikArrtirmaServer.Application.pdb
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\bin\Debug\net7.0\AcikArrtirmaServer.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\bin\Debug\net7.0\AcikArrtirmaServer.Domain.pdb
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\AcikArrtirmaServer.Application.csproj.AssemblyReference.cache
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\AcikArrtirmaServer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\AcikArrtirmaServer.Application.AssemblyInfoInputs.cache
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\AcikArrtirmaServer.Application.AssemblyInfo.cs
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\AcikArrtirmaServer.Application.csproj.CoreCompileInputs.cache
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\AcikArrtirmaServer.Application.csproj.CopyComplete
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\AcikArrtirmaServer.Application.dll
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\refint\AcikArrtirmaServer.Application.dll
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\AcikArrtirmaServer.Application.pdb
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Application\obj\Debug\net7.0\ref\AcikArrtirmaServer.Application.dll

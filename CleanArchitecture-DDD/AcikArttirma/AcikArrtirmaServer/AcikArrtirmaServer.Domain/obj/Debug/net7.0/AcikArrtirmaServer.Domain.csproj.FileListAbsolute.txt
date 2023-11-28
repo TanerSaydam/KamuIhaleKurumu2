@@ -1,0 +1,12 @@
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\bin\Debug\net7.0\AcikArrtirmaServer.Domain.deps.json
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\bin\Debug\net7.0\AcikArrtirmaServer.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\bin\Debug\net7.0\AcikArrtirmaServer.Domain.pdb
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\AcikArrtirmaServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\AcikArrtirmaServer.Domain.AssemblyInfoInputs.cache
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\AcikArrtirmaServer.Domain.AssemblyInfo.cs
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\AcikArrtirmaServer.Domain.csproj.CoreCompileInputs.cache
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\AcikArrtirmaServer.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\refint\AcikArrtirmaServer.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\AcikArrtirmaServer.Domain.pdb
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\ref\AcikArrtirmaServer.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\AcikArttirma\AcikArrtirmaServer\AcikArrtirmaServer.Domain\obj\Debug\net7.0\AcikArrtirmaServer.Domain.csproj.AssemblyReference.cache

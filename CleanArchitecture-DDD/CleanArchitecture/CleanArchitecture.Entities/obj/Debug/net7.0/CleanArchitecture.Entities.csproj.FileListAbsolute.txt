@@ -1,0 +1,12 @@
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\bin\Debug\net7.0\CleanArchitecture.Entities.deps.json
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\bin\Debug\net7.0\CleanArchitecture.Entities.dll
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\bin\Debug\net7.0\CleanArchitecture.Entities.pdb
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\CleanArchitecture.Entities.csproj.AssemblyReference.cache
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\CleanArchitecture.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\CleanArchitecture.Entities.AssemblyInfoInputs.cache
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\CleanArchitecture.Entities.AssemblyInfo.cs
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\CleanArchitecture.Entities.csproj.CoreCompileInputs.cache
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\CleanArchitecture.Entities.dll
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\refint\CleanArchitecture.Entities.dll
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\CleanArchitecture.Entities.pdb
+C:\KIK2-CleanArchitecture-DDD\CleanArchitecture\CleanArchitecture.Entities\obj\Debug\net7.0\ref\CleanArchitecture.Entities.dll

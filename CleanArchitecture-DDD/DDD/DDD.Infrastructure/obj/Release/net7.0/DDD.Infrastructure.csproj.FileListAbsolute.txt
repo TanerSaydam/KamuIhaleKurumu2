@@ -1,0 +1,17 @@
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\bin\Release\net7.0\DDD.Infrastructure.deps.json
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\bin\Release\net7.0\DDD.Infrastructure.runtimeconfig.json
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\bin\Release\net7.0\DDD.Infrastructure.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\bin\Release\net7.0\DDD.Infrastructure.pdb
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\bin\Release\net7.0\DDD.Domain.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\bin\Release\net7.0\DDD.Domain.pdb
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.csproj.AssemblyReference.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.AssemblyInfoInputs.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.AssemblyInfo.cs
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.csproj.CoreCompileInputs.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.csproj.CopyComplete
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\refint\DDD.Infrastructure.dll
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.pdb
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\DDD.Infrastructure.genruntimeconfig.cache
+C:\KIK2-CleanArchitecture-DDD\DDD\DDD.Infrastructure\obj\Release\net7.0\ref\DDD.Infrastructure.dll

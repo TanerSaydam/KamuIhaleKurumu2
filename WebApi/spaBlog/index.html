@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <button onclick="getHome()">Ana Sayfa</button> ||
+    <button onclick="getAbout()">Hakkımda</button> ||
+    <button onclick="getContact()">İletişim</button>
+
+
+    <div id="main"></div>
+
+    <script>
+
+        const element = document.getElementById("main");
+        function getHome() {
+            const homePage = `
+            <h1>Home Page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure incidunt temporibus, ab quod illo deserunt atque. Minima quae ullam natus fugiat minus voluptate ut mollitia incidunt. Adipisci, aliquid aspernatur.</p>
+            `
+
+            element.innerHTML = homePage;
+        }
+
+
+        function getAbout() {
+            const aboutPage = `
+            <h1>About Page</h1>
+    <button onclick="getApiRequest()">Get Todo List</button>
+    <ul id="root">
+        `
+
+        element.innerHTML = aboutPage;
+        }
+
+
+        function getContact() {
+            const contactPage = `
+            
+    <h1>Contact Page</h1>
+    
+    <form>
+        <div>
+            Name
+            <input type="text">
+        </div>
+        <div>
+            Subject
+            <input type="text">
+        </div>
+        <div>
+            Content
+            <textarea></textarea>
+        </div>
+        <div>
+            <button>Send</button>
+        </div>
+    </form>
+            `
+
+            element.innerHTML = contactPage;
+        }
+
+        function getApiRequest() {
+            fetch('https://jsonplaceholder.typicode.com/todos')
+                .then(response => response.json())
+                .then(data => {
+                    let elements = "";
+                    data.forEach(element => {
+                        elements += "<li>" + element.title + "</li>"
+                    });
+
+                    const el = document.getElementById("root");
+                    el.innerHTML = elements;
+                });
+        }
+    </script>
+</body>
+
+</html>

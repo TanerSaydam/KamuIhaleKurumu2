@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "E1t70gmdc54WR9txwbhB2afeBDe7Hu5M4qJcWLnAUithVWb7o4aMcv052bS6ibayrd0smXyOLQWw+L1Zyfi58A==",
+  "success": true,
+  "projectFilePath": "C:\\KIK2-CleanArchitecture-DDD\\FuzzyStringConsoleApp\\FuzzyStringConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tugay\\.nuget\\packages\\fuzzystring\\1.0.0\\fuzzystring.1.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FuzzyString 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FuzzyString",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}
