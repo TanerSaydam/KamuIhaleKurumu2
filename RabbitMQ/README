@@ -1,0 +1,15 @@
+# Kamu İhale Kurumu 2.Grup RabbitMQ Eğitimi 
+
+## 1. Gün İşlenenler
+- RabbitMQ Nedir?
+- RabbitMQ Kurulum Yöntemleri
+- RabbitMQ PC Kurulumu
+- RabbitMQ Docker Üzerinden Ayağa Kaldırma
+- RabbitMQ Cloud Kullanımı
+- Publisher ve Consumer Oluşturma
+- Basic Version Kullanımı
+- Birden Fazla Consumer'a Sırayla Değer Gönderme
+- RabbitMQ Kapanırsa Kuyruğu ve Kuyruk İçindekileri Saklama
+- Birden Fazla Consumer'a Aynı Anda Veri Gönderme
+- Birden Fazla Consumer da Routing Key'e göre Spesifik Veri Gönderme
+- Birden Fazla Consumer da Şablona Göre Spesifik Veri Gönderme
