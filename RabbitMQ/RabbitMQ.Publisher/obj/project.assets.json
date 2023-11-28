@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\KIK-RabbitMQ\\RabbitMQ\\RabbitMQ.Publisher\\RabbitMQ.Publisher.csproj",
+      "projectUniqueName": "C:\\KamuIhaleKurumu2\\RabbitMQ\\RabbitMQ.Publisher\\RabbitMQ.Publisher.csproj",
       "projectName": "RabbitMQ.Publisher",
-      "projectPath": "C:\\KIK-RabbitMQ\\RabbitMQ\\RabbitMQ.Publisher\\RabbitMQ.Publisher.csproj",
+      "projectPath": "C:\\KamuIhaleKurumu2\\RabbitMQ\\RabbitMQ.Publisher\\RabbitMQ.Publisher.csproj",
       "packagesPath": "C:\\Users\\tugay\\.nuget\\packages\\",
-      "outputPath": "C:\\KIK-RabbitMQ\\RabbitMQ\\RabbitMQ.Publisher\\obj\\",
+      "outputPath": "C:\\KamuIhaleKurumu2\\RabbitMQ\\RabbitMQ.Publisher\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,78 @@
+1) RabbitMQ hangi dilde yazýlmýþtýr?
+	A) Python
+	B) Go
+	C) Java
+	D) Erlang 
+Cevap D Erlang: RabbitMQ Erlang dilinde yazýlmýþdýr.
+
+2) RabbitMQ’da mesajlar ilk nereye gönderilir?
+	A) Consumer
+	B) Exchange
+	C) Queue
+	D) Producer
+Cevap B Exchange: RabbitMQ’da üretilen mesajlar ilk olarak exchange’e gönderilir. 
+Exchange, mesajlarý hangi kuyruða yönlendireceðine karar verir.
+
+3) Exchange, mesajý hangi kuyruða göndereceðini nasýl belirler?
+	A) Binding Key
+	B) Routing Key
+	C) Both A and B
+	D) None of the above
+Cevap C Both A and B: Exchange, mesajlarý doðru kuyruða yönlendirmek için binding key veya routing key kullanýr. 
+Bu yüzden "Both A and B" doðru cevap olur.
+
+4) Aþaðýdakilerden hangisi RabbitMQ’da bir Exchange tipi deðildir?
+	A) Topic
+	B) Direct
+	C) Fanout
+	D) Relay
+Cevap D Relay: Relay, standart RabbitMQ exchange tipleri arasýnda yer almaz. 
+Standart tipler topic, direct ve fanout’tur.
+
+5) Mesajlarýn diskte saklanmasýný istiyorsak, hangi özelliði set etmeliyiz?
+	A) persistent
+	B) durable
+	C) both A and B
+	D) none of the above
+Cevap C both A and B: Mesajlarýn diskte kalýcý olarak saklanmasýný istiyorsak, 
+mesajýn kendisini persistent ve kuyruðu durable olarak iþaretlemeliyiz.
+
+6) RabbitMQ’da hangi komut, tüm mesajlarýn kuyruktan silinmesini saðlar?
+	A) clear
+	B) delete
+	C) purge
+	D) remove
+Cevap C purge: RabbitMQ’da purge komutu, bir kuyruktaki tüm mesajlarý siler.
+
+7) Mesajlarýn sadece bir kez iþlenmesini garanti etmek için hangi özellik kullanýlýr?
+	A) Acknowledgment
+	B) Durable
+	C) Persistence
+	D) Consistency
+Cevap A Acknowledgment: Mesajlarýn sadece bir kez iþlenmesini garanti etmek için kullanýlan yöntem, 
+mesaj iþlendikten sonra consumer tarafýndan gönderilen bir acknowledgment’týr.
+
+8) Aþaðýdakilerden hangisi RabbitMQ'da bir durumlu kuyruk (dead-letter queue) olarak kullanýlmaz?
+	A) Unacknowledged messages
+	B) Rejected messages
+	C) Processed messages
+	D) Expired messages
+Cevap C Processed messages: Dead-letter queue, iþlenemeyen mesajlarýn gönderildiði özel bir kuyruktur. 
+Ýþlenmiþ mesajlar normale göre bir dead-letter queue'ya gönderilmez.
+
+9) RabbitMQ'da birden fazla consumer'ýn olduðu bir senaryoda, her bir mesajýn sadece bir tarafýndan 
+iþlenmesini saðlamak için hangi özellik set edilmelidir?
+	A) prefetch
+	B) round-robin
+	C) acknowledgment
+	D) fair dispatch
+Cevap C Acknowledgment: Her bir mesajýn sadece bir consumer tarafýndan iþlenmesini saðlamak için 
+mesajlar iþlendikten sonra consumer'lar tarafýndan bir acknowledgment gönderilir.
+
+10) Eðer bir mesajýn belirli bir süre sonra otomatik olarak silinmesini istiyorsak, hangi özellik set edilmelidir?
+	A) message-ttl
+	B) expiration
+	C) auto-delete
+	D) delay
+Cevap A Message-ttl (Time To Live): Bir mesajýn belirli bir süre sonra otomatik olarak silinmesini 
+saðlamak için message-ttl özelliði set edilir. Bu süre sonunda mesaj kuyruktan otomatik olarak silinir.

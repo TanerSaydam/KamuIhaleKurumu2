@@ -1,0 +1,6 @@
+@DosyaYuklemeServer.WebApi_HostAddress = http://localhost:5111
+
+GET {{DosyaYuklemeServer.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

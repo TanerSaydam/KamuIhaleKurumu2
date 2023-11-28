@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\KIK-RabbitMQ\\RabbitMQ\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj": {}
+    "C:\\KamuIhaleKurumu2\\RabbitMQ\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj": {}
   },
   "projects": {
-    "C:\\KIK-RabbitMQ\\RabbitMQ\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj": {
+    "C:\\KamuIhaleKurumu2\\RabbitMQ\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\KIK-RabbitMQ\\RabbitMQ\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj",
+        "projectUniqueName": "C:\\KamuIhaleKurumu2\\RabbitMQ\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj",
         "projectName": "RabbitMQ.Consumer",
-        "projectPath": "C:\\KIK-RabbitMQ\\RabbitMQ\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj",
+        "projectPath": "C:\\KamuIhaleKurumu2\\RabbitMQ\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj",
         "packagesPath": "C:\\Users\\tugay\\.nuget\\packages\\",
-        "outputPath": "C:\\KIK-RabbitMQ\\RabbitMQ\\RabbitMQ.Consumer\\obj\\",
+        "outputPath": "C:\\KamuIhaleKurumu2\\RabbitMQ\\RabbitMQ.Consumer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
