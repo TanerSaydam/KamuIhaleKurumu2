@@ -1,0 +1,48 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-9"></div>
+    <div class="col-3">
+      <input type="text" class="form-control" placeholder="Aranacak değer..." [(ngModel)]="search">
+    </div>
+  </div>
+  
+  <div class="row overflow-auto">
+    <table style="transform: scaleX(0.9);" class="table table-hover table-bordered mt-2">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>LastName</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Country</th>
+          <th>City</th>
+          <th>Postal Code</th>
+          <th>Full Address</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (user of users | userPipe: search; track user) {
+          <tr>
+            <td>{{$index + 1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.lastname}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.country}}</td>
+            <td>{{user.city}}</td>
+            <td>{{user.postalCode}}</td>
+            <td>{{user.fullAddress}}</td>
+            <td>
+              <button class="btn btn-sm btn-outline-warning">Update</button>
+              <br>
+              <button class="btn btn-sm btn-outline-danger mt-1">Remove</button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+ 
+</div>

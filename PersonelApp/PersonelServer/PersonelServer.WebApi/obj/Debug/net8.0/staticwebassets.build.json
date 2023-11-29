@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xNyvYuanKc4Ua9yl8uNuK05m9EUV2BWQ+o9NkZOP6Dg=",
+  "Source": "PersonelServer.WebApi",
+  "BasePath": "_content/PersonelServer.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\bin\Debug\net8.0\PersonelServer.Domain.deps.json
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\bin\Debug\net8.0\PersonelServer.Domain.dll
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\bin\Debug\net8.0\PersonelServer.Domain.pdb
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\PersonelServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\PersonelServer.Domain.AssemblyInfoInputs.cache
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\PersonelServer.Domain.AssemblyInfo.cs
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\PersonelServer.Domain.csproj.CoreCompileInputs.cache
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\PersonelServer.Domain.sourcelink.json
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\PersonelServer.Domain.dll
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\refint\PersonelServer.Domain.dll
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\PersonelServer.Domain.pdb
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.Domain\obj\Debug\net8.0\ref\PersonelServer.Domain.dll
