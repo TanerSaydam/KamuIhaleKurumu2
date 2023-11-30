@@ -1,5 +1,6 @@
 ﻿namespace PersonelServer.Domain.Users;
 public sealed record UserResponseDto(
+    Guid Id,
     string Name,
     string Lastname,
     string Email,

@@ -1,6 +1,8 @@
 <div class="container mt-4">
   <div class="row">
-    <div class="col-9"></div>
+    <div class="col-9">
+      <button class="btn btn-dark" (click)="sendEmail()">Seçililere Mail Gönder</button>
+    </div>
     <div class="col-3">
       <input type="text" (keyup)="searchFromList()" class="form-control" placeholder="Aranacak değer..." [(ngModel)]="search">
     </div>
@@ -10,8 +12,9 @@
     <table style="transform: scaleX(0.9);" class="table table-hover table-bordered mt-2">
       <thead>
         <tr>
+          <th>Seçim</th>
           <th>#</th>
-          <th>Name</th>
+          <th>Name</th>   
           <th>LastName</th>
           <th>Email</th>
           <th>Phone Number</th>
@@ -25,6 +28,9 @@
       <tbody>
         @for (user of users; track user) {
           <tr>
+            <td class="text-center">
+              <input (change)="selectOrUnselect(user.id)" type="checkbox">
+            </td>
             <td>{{((this.selectedPage - 1) * 5) + $index + 1}}</td>
             <td [title]="user.name">{{user.name}}</td>
             <td [title]="user.lastname">{{user.lastname}}</td>
@@ -35,9 +41,9 @@
             <td [title]="user.postalCode">{{user.postalCode}}</td>
             <td [title]="user.fullAddress">{{user.fullAddress}}</td>
             <td>
-              <button class="btn btn-sm btn-outline-warning">Update</button>
+              <button  class="btn btn-sm btn-outline-warning">Update</button>
               <br>
-              <button class="btn btn-sm btn-outline-danger mt-1">Remove</button>
+              <button (click)="removeById(user.id)" class="btn btn-sm btn-outline-danger mt-1">Remove</button>
             </td>
           </tr>
         }

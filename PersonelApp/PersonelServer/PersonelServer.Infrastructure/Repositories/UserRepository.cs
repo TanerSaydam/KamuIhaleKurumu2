@@ -14,4 +14,14 @@ internal sealed class UserRepository(ApplicationDbContext context) : IUserReposi
     {
         return context.Set<User>().ToListAsync(cancellationToken);
     }
+
+    public async Task<User?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
+    {
+        return await context.Set<User>().FindAsync(id, cancellationToken);
+    }
+
+    public void Remove(User user)
+    {
+        context.Set<User>().Remove(user);
+    }
 }

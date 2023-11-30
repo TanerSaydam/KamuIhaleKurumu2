@@ -19,9 +19,26 @@ export class AppComponent {
   selectedPage: number = 1;
   pageCount: number = 0;
   totalCount: number = 0;
+  ids: string[] = [];
 
   constructor(private http: HttpClient) {
     this.getAll();
+  }
+
+  selectOrUnselect(id: string){
+    const index = this.ids.findIndex(p=> p == id);
+    if(index < 0){
+      this.ids.push(id)
+    }else{
+      this.ids.splice(index,1);
+    }
+  }
+
+  sendEmail(){
+    this.http.post("https://localhost:7298/api/Users/SendEmailSelectedUsers", this.ids)
+    .subscribe(()=> {
+      console.log("Gönderim başarılı");      
+    })
   }
 
   getAll() {
@@ -29,10 +46,17 @@ export class AppComponent {
       .subscribe(res => {
         this.orgUsers = res;
         this.pageCount = Math.ceil(this.orgUsers.length / 5);
-        this.users = this.orgUsers.slice(0, 5);
+        this.users = this.orgUsers.slice(((this.selectedPage - 1) * 5), (this.selectedPage * 5));
         this.setPageNumbersFromList();
         this.totalCount = this.orgUsers.length;
       })
+  }
+
+  removeById(id: string){
+    this.http.post("https://localhost:7298/api/Users/RemoveById", {id: id})
+    .subscribe(()=> {
+      this.getAll();
+    })
   }
 
   setPageNumbersFromList() {
@@ -75,6 +99,7 @@ export class AppComponent {
 }
 
 export class UserModel {
+  id: string = "";
   name: string = "";
   lastname: string = "";
   email: string = "";

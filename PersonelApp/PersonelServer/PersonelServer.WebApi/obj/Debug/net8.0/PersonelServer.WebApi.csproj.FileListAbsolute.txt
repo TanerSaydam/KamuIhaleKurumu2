@@ -141,3 +141,4 @@ C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.WebApi\obj\Debug\n
 C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.WebApi\obj\Debug\net8.0\PersonelServer.WebApi.genruntimeconfig.cache
 C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.WebApi\obj\Debug\net8.0\ref\PersonelServer.WebApi.dll
 C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.WebApi\bin\Debug\net8.0\Bogus.dll
+C:\KamuIhaleKurumu2\PersonelApp\PersonelServer\PersonelServer.WebApi\bin\Debug\net8.0\RabbitMQ.Client.dll
