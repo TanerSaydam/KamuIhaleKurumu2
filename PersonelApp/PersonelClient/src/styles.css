@@ -4,3 +4,7 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
+a{
+    cursor: pointer;
+}

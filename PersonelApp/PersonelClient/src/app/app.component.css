@@ -1,0 +1,11 @@
+.table-hover tbody tr {
+    max-height: 50px; /* Satırların maksimum yüksekliği */
+    overflow: hidden; /* Sığmayan içeriği gizle */
+  }
+
+  .table-hover tbody tr td {
+    white-space: nowrap; /* Satır içeriğini tek satırda tut */
+    overflow: hidden; /* Sığmayan içeriği gizle */
+    text-overflow: ellipsis; /* Sığmayan içeriğin sonuna üç nokta koy */
+    max-width: 0; /* Hücre genişliğini sınırla */
+  }

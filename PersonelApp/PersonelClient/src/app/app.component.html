@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-9"></div>
     <div class="col-3">
-      <input type="text" class="form-control" placeholder="Aranacak değer..." [(ngModel)]="search">
+      <input type="text" (keyup)="searchFromList()" class="form-control" placeholder="Aranacak değer..." [(ngModel)]="search">
     </div>
   </div>
   
@@ -23,17 +23,17 @@
         </tr>
       </thead>
       <tbody>
-        @for (user of users | userPipe: search; track user) {
+        @for (user of users; track user) {
           <tr>
-            <td>{{$index + 1}}</td>
-            <td>{{user.name}}</td>
-            <td>{{user.lastname}}</td>
-            <td>{{user.email}}</td>
-            <td>{{user.phoneNumber}}</td>
-            <td>{{user.country}}</td>
-            <td>{{user.city}}</td>
-            <td>{{user.postalCode}}</td>
-            <td>{{user.fullAddress}}</td>
+            <td>{{((this.selectedPage - 1) * 5) + $index + 1}}</td>
+            <td [title]="user.name">{{user.name}}</td>
+            <td [title]="user.lastname">{{user.lastname}}</td>
+            <td [title]="user.email">{{user.email}}</td>
+            <td [title]="user.phoneNumber">{{user.phoneNumber}}</td>
+            <td [title]="user.country">{{user.country}}</td>
+            <td [title]="user.city">{{user.city}}</td>
+            <td [title]="user.postalCode">{{user.postalCode}}</td>
+            <td [title]="user.fullAddress">{{user.fullAddress}}</td>
             <td>
               <button class="btn btn-sm btn-outline-warning">Update</button>
               <br>
@@ -44,5 +44,46 @@
       </tbody>
     </table>
   </div>
+
+  <div class="d-flex justify-content-center gap-5">
+    <span class="alert alert-danger">
+      {{totalCount}}
+    </span>
+    <nav aria-label="...">
+      <ul class="pagination">
+        @if(selectedPage !== 1){
+          <li class="page-item">
+            <a class="page-link" (click)="changePage(selectedPage -1)">Önceki</a>
+          </li>
+        }        
+        @if(selectedPage -3 > 1){
+          <li class="page-item" [ngClass]="pageCount === 1 ? 'active' : ''">
+            <a class="page-link" (click)="changePage(1)">
+             İlk
+            </a>
+          </li> 
+        }
+       
+        @for(number of pageNumbers; track number){
+          <li class="page-item" [ngClass]="number === selectedPage ? 'active' : ''">
+            <a class="page-link" (click)="changePage(number)">
+              {{number}}
+            </a>
+          </li>      
+        }  
+        <li class="page-item" [ngClass]="pageCount === selectedPage ? 'active' : ''">
+          <a class="page-link" (click)="changePage(pageCount)">
+           {{pageCount}}
+          </a>
+        </li>  
+        @if(selectedPage !== pageCount){
+          <li class="page-item">
+            <a class="page-link" (click)="changePage(selectedPage +1)">Sonraki</a>
+          </li>
+        } 
+      </ul>
+    </nav>
+  </div>
+  
  
 </div>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonelServer.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cbc8e6d9ea7d1134077f6c6e81edeac58aa12ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c83823368088813f73ead95bc4e232a9f74b4099")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonelServer.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonelServer.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
